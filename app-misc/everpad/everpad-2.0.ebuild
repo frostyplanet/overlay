@@ -9,7 +9,7 @@ PYTHON_COMPAT=(python{2_5,2_6,2_7})
 inherit distutils git-2 eutils
 
 EGIT_REPO_URI="git://github.com/nvbn/everpad.git"
-EGIT_MASTER="master"
+EGIT_MASTER="stable-2.0"
 
 DESCRIPTION="Evernote client well integrated with linux desktop"
 HOMEPAGE="https://github.com/nvbn/everpad"
@@ -19,7 +19,7 @@ LICENSE="X11"
 SLOT="0"
 IUSE="test"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 DEPEND=""
 RDEPEND="
@@ -33,7 +33,7 @@ dev-python/sqlalchemy
 dev-python/dbus-python
 dev-python/setuptools
 dev-python/pyside[webkit]
-dev-python/python-magic
+sys-apps/file[python]
 "
 
 python_test() {
